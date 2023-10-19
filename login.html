@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.purpleButton {
+    border: 0.15rem solid purple;
+    border-radius: 0.9rem;
+    background-color:rgb(40, 40, 40);
+    display: block;
+    margin: 0.75rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    color: dimgray;
+}
+.purpleButton:hover {
+    animation-name: fadeToPurple;
+    animation-duration: 500ms;
+    background-color: purple;
+}
+/* rgb(40, 40, 40) */
+@keyframes fadeToPurple {
+    from {background-color: rgb(40, 40, 40);}
+    to {background-color: purple;}
+}
+.menuLink {
+    /* text-decoration: none; */
+    text-align: center !important;
+    border-bottom-width: 0rem;
+}
+.menuLink:hover {
+    animation-name: addLine;
+    animation-duration: 500ms;
+    border-bottom-width: initial;
+}
+@keyframes addLine {
+    from {
+        border-bottom: 0rem solid rgb(40, 40, 40);
+    }
+    to {border-bottom-width: initial;}
+}
+.centeredButton {
+    text-align: center;
+    margin: auto;
+}
+.centered {
+    text-align: center;
+    margin: auto;
+}
+
+</style>
+</head>
+<body style="background-color:#945393;">
+
+<button class="purpleButton centeredButton" style="margin-bottom: 0.5rem;">Login</button>
+<button class="purpleButton centeredButton" style="margin-bottom: 0.5rem;">Sign Up</button>
+
+<div id = "mainMenuContinueButton" style="text-align: center;">
+    <a href="main.html"  class="menuLink" style="color:dimgray">Continue as guest</a>
+</div>
+
+</body>
+</html>
