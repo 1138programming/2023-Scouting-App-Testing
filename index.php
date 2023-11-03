@@ -64,10 +64,10 @@
 <!-- <input type="passaword" autocomplete="off" maxLength="10" id="pass" name="passw" ><br><br>
 
 <button class="purpleButton centeredButton" style="margin-bottom: 0.5rem;" onclick="Login.php">Login</button> -->
-<form method="post" onsubmit="LoginCheck(document.getElementById('pass').value);">
+<form action="process.php" method="post">
     <label for="pass">Enter Your Password:</label>
-    <input type="password" id="pass" name="pass" required>
-    <button type="submit"  >Login</button>
+    <input type="text" id="pass" name="pass" required>
+    <button type="submit">Login</button>
   </form>
 
 

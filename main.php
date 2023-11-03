@@ -3,7 +3,7 @@
 <head>
 </head>
 <body>
-<body style="background-color:#555;">
+
 <button onclick="setStartTime()">Start</button>
 
 <p id="textDisplay"></p>
