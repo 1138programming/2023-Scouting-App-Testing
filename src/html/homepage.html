@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    
+.center{
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+ion-icon {
+    color: #fff;
+}
+.header {
+    display:block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.topRightWithOffset {
+    position:absolute;
+    top: 5px;
+    right: 5px;
+}
+.topLeftWithOffset {
+    position:absolute;
+    top: 5px;
+    left: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border: 1px solid white;
+}
+.row {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.match-num-style {
+    text-align: center;
+}
+.match-teams-style {
+    text-align: center;
+}
+.double-width {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.custom-rounded-button {
+    border: 0.15rem solid purple;
+    border-radius: 0.9rem;
+    background-color:rgb(40, 40, 40);
+    margin: 0.75rem 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    color: dimgray;
+}
+#settings-button {
+    font-size: 64px;
+}
+#hamburger-icon {
+    font-size: 64px;
+}
+#welcome-text {
+    color: #fff;
+    text-align: center;
+    margin: 0px;
+}
+</style>
+</head>
+
+<body style="background-color:#222;">
+
+<div class="header">
+    <ion-icon name="reorder-three-sharp" id="hamburger-icon" class="topLeftWithOffset"></ion-icon>
+    <h1 id="welcome-text" style="font-size: 50px;">Welcome [Insert Name]!</h1>
+    <ion-icon name="settings-sharp" id="settings-button" class="topRightWithOffset"></ion-icon>
+</div>
+
+<div class="grid">
+    <h1 style="color: white;" class="match-num-style">Match #1</h1>
+    <h2 style="color: darkred;" class="match-teams-style">1469A</h2>
+    <div class="double-width" style="text-align: center;">
+        <button class="custom-rounded-button">edit</button>
+    </div>
+
+
+    <h1 style="color: white;" class="match-num-style">Match #2</h1>
+    <h2 style="color: darkcyan;" class="match-teams-style">1138G</h2>
+    <div class="double-width" style="text-align: center;">
+        <button class="custom-rounded-button">start</button>
+        <button class="custom-rounded-button">need a sub</button>
+    </div>
+</div>
+
+
+<!-- ionicons code -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
