@@ -2,7 +2,9 @@
 <html>
 <head>
 <style>
-    
+:root {
+    --background-color: #222;
+}
 .center{
     text-align: center;
     margin: auto;
@@ -30,7 +32,7 @@ ion-icon {
 .grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  border: 1px solid white;
+  border: 1px solid slategray;
 }
 .row {
     float: left;
@@ -47,15 +49,31 @@ ion-icon {
     grid-column-start: 3;
     grid-column-end: 5;
 }
+.quad-width {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
 .custom-rounded-button {
-    border: 0.15rem solid purple;
-    border-radius: 0.9rem;
-    background-color:rgb(40, 40, 40);
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: purple;
     margin: 0.75rem 0.75rem;
-    font-size: 1rem;
+    font-size: 20px;
+    font-weight: bold;
     cursor: pointer;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     color: dimgray;
+}
+.custom-rounded-button:hover {
+    animation-name: button-hover;
+    animation-duration: 1000ms;
+    background-color: var(--background-color);
+}
+@keyframes button-hover {
+    from {}
+    to {
+        background-color: var(--background-color);
+    }
 }
 #settings-button {
     font-size: 64px;
@@ -71,7 +89,7 @@ ion-icon {
 </style>
 </head>
 
-<body style="background-color:#222;">
+<body style="background-color:var(--background-color);">
 
 <div class="header">
     <ion-icon name="reorder-three-sharp" id="hamburger-icon" class="topLeftWithOffset"></ion-icon>
@@ -80,12 +98,11 @@ ion-icon {
 </div>
 
 <div class="grid">
-    <h1 style="color: white;" class="match-num-style">Match #1</h1>
+    <h1 style="color: white;" class="match-num-style"><s>Match #1</s></h1>
     <h2 style="color: darkred;" class="match-teams-style">1469A</h2>
     <div class="double-width" style="text-align: center;">
         <button class="custom-rounded-button">edit</button>
     </div>
-
 
     <h1 style="color: white;" class="match-num-style">Match #2</h1>
     <h2 style="color: darkcyan;" class="match-teams-style">1138G</h2>
