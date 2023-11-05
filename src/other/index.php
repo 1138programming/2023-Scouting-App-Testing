@@ -64,11 +64,11 @@
 <!-- <input type="passaword" autocomplete="off" maxLength="10" id="pass" name="passw" ><br><br>
 
 <button class="purpleButton centeredButton" style="margin-bottom: 0.5rem;" onclick="Login.php">Login</button> -->
-<form action="process.php" method="post">
+<form class = "centeredButton" action="process.php" method="post">
     <label for="pass">Enter Your Password:</label>
     <input type="text" id="pass" name="pass" required>
     <button type="submit">Login</button>
-  </form>
+</form>
 
 
 
