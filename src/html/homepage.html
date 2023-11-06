@@ -85,6 +85,17 @@ ion-icon {
     text-align: center;
     margin: 0px;
 }
+body {
+    animation: 1.25s  ease-in-out fadeIn;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 </style>
 </head>
 
@@ -106,8 +117,8 @@ ion-icon {
     <h1 style="color: white;" class="match-num-style">Match #2</h1>
     <h2 style="color: darkcyan;" class="match-teams-style">1138G</h2>
     <div class="double-width" style="text-align: center;">
-        <button class="custom-rounded-button" style="color: aqua; background-color: #fff;">start</button>
-        <button class="custom-rounded-button">need a sub</button>
+        <button class="custom-rounded-button" style="background-color: darkblue;">start</button>
+        <button class="custom-rounded-button" style="background-color: brown;">need a sub</button>
     </div>
 </div>
 
