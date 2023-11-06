@@ -67,10 +67,9 @@ ion-icon {
 .custom-rounded-button:hover {
     animation-name: button-hover;
     animation-duration: 350ms;
-    background-color: #000;
+    animation-fill-mode: forwards;
 }
 @keyframes button-hover {
-    from {}
     to {
         background-color: var(--background-color);
     }
