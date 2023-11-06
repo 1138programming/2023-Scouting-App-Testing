@@ -17,7 +17,10 @@ ion-icon {
 .header {
     display:block;
     text-align: center;
+}
+.header-tag {
     margin-bottom: 50px;
+    color: #fff;
 }
 .topRightWithOffset {
     position:absolute;
@@ -103,9 +106,14 @@ body {
 
 <div class="header">
     <ion-icon name="reorder-three-sharp" id="hamburger-icon" class="topLeftWithOffset"></ion-icon>
-    <h1 id="welcome-text" style="font-size: 50px;">Welcome [Insert Name]!</h1>
+    <h1 id="welcome-text" style="font-size: 50px;">Welcome Joshua Duross!</h1>
     <ion-icon name="settings-sharp" id="settings-button" class="topRightWithOffset"></ion-icon>
 </div>
+
+<div class="header-tag">
+    <p style="text-align: center;">Scouting partners = Jonathan Klein, Jacob Schwartz, Robert Badelt</p>
+</div>
+
 
 <div class="grid">
     <h1 style="color: gray;" class="match-num-style"><s>Match #1</s></h1>
@@ -114,7 +122,10 @@ body {
         <button class="custom-rounded-button">edit</button>
     </div>
 
-    <h1 style="color: white;" class="match-num-style">Match #2</h1>
+    <div style="color: white;" class="match-num-style">
+        <h1>Match #2</h1>
+        <p>handled by Jonathan</p>
+    </div>
     <h2 style="color: darkcyan;" class="match-teams-style">1138G</h2>
     <div class="double-width" style="text-align: center;">
         <button class="custom-rounded-button" style="background-color: darkblue;">start</button>
