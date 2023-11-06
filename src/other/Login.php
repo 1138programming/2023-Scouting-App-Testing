@@ -5,7 +5,7 @@ $targetString = "password123";
 
 if ($userInput === $targetString) {
   // Redirect to the target page
-  header("Location: redirect.php");
+  header("Location: main.php");
   exit(); // Ensure that code below does not get executed after the redirect
 } else {
   echo "Input does not match. Please try again.";
