@@ -1,4 +1,4 @@
-window.onload = (function(document){
+window.onload = (function(){
     var icon = document.getElementById("settings-button");
     var open = false;
     console.log(icon);  
@@ -13,4 +13,4 @@ window.onload = (function(document){
       
       open = !open;
     });
-  })(document);
+  });
