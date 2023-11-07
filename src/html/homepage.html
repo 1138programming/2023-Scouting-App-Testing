@@ -82,9 +82,19 @@ ion-icon {
     animation-iteration-count: infinite;
     transform-origin: 50% 50%;
     display: inline-block;
-    animation: 1s settings-rotate forwards ease-out;
 }
-@keyframes settings-rotate {
+.settings-normal {
+    animation: 1s settings-normal forwards ease-out;
+}
+@keyframes settings-normal {
+    to {
+        rotate: 360deg;
+    }
+}
+.settings-rotated {
+    animation: 1s settings-rotated forwards ease-out;
+}
+@keyframes settings-rotated {
     to {
         rotate: 180deg;
     }
@@ -146,5 +156,7 @@ body {
 <!-- ionicons code -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<!-- custom js -->
+<script src="clickrotate.ts"></script>
 </body>
 </html>
