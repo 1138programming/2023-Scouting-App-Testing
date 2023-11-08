@@ -4,6 +4,8 @@
 <style>
 :root {
     --background-color: #222;
+    --robotics-red: #F35C6E;
+    --bot-blue: #686EE2;
 }
 .center{
     text-align: center;
@@ -65,7 +67,7 @@ ion-icon {
     font-weight: bold;
     cursor: pointer;
     padding: 16px 32px;
-    color: dimgray;
+    color: black;
 }
 .custom-rounded-button:hover {
     animation-name: button-hover;
@@ -138,7 +140,7 @@ body {
 
 <div class="grid">
     <h1 style="color: gray;" class="match-num-style"><s>Match #1</s></h1>
-    <h2 style="color: darkred;" class="match-teams-style">1469A</h2>
+    <h2 style="color: var(--robotics-red);" class="match-teams-style">1469A</h2>
     <div class="double-width" style="text-align: center;">
         <button class="custom-rounded-button">edit</button>
     </div>
@@ -147,10 +149,10 @@ body {
         <h1>Match #2</h1>
         <p>handled by Jonathan</p>
     </div>
-    <h2 style="color: darkcyan;" class="match-teams-style">1138G</h2>
+    <h2 style="color: var(--bot-blue);" class="match-teams-style">1138G</h2>
     <div class="double-width" style="text-align: center;">
-        <button class="custom-rounded-button" style="background-color: darkblue;">start</button>
-        <button class="custom-rounded-button" style="background-color: brown;">need a sub</button>
+        <button class="custom-rounded-button" style="background-color: var(--bot-blue);">start</button>
+        <button class="custom-rounded-button" style="background-color: var(--robotics-red);">need a sub</button>
     </div>
 </div>
 
