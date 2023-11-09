@@ -318,9 +318,16 @@
         ele[i].checked = false;
         }
       }
+      function clearCheck(event){
+        var ele = document.querySelectorAll("input[type=checkbox]");
+        for(var i=0; i<ele.length; i++){
+          ele[i].checked = false;
+        }
+      }
       function clearEverything(event){
         clearText();
         clearRadio();
+        clearCheck();
       }
 
 
